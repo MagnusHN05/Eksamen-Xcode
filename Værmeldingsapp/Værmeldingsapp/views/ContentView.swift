@@ -14,19 +14,18 @@ struct ContentView: View {
     
     var body: some View{
         VStack {
-            
             if let location = locationManager.location {
-                if let weather = weather{
-                    if let weather = weather{
-                        Text("funker")
-                    }
-                } else {
+                if let weather = weather {
+                    Text("Vær Data hentet fra API, Funker!")
+                }
+                else{
                     LoadingView()
-                        .task {
-                            do {
+                        .task{
+                            do{
                                 weather = try await værapiManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
-                            } catch {
-                                print("Error getting weather: \(error)")
+                            }
+                            catch {
+                                print("Feil! fetcher ikke data fra API URL")
                             }
                         }
                 }
