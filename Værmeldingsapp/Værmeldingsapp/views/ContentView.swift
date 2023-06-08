@@ -9,38 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var locationManager = LocationManager()
-    var værapiManager = VærApiManager()
+    var weatherManager = VærApiManager()
     @State var weather: ResponseBody?
     
-    var body: some View{
+    var body: some View {
         VStack {
             if let location = locationManager.location {
                 if let weather = weather {
-                    Text("Vær Data hentet fra API, Funker!")
-                }
-                else{
+                    VærView(weather: weather)
+                } else {
                     LoadingView()
-                        .task{
-                            do{
-                                weather = try await værapiManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
-                            }
-                            catch {
-                                print("Feil! fetcher ikke data fra API URL")
+                        .task {
+                            do {
+                                weather = try await weatherManager.getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
+                            } catch {
+                                print("feil!: \(error)")
                             }
                         }
                 }
-            }
-            else{
-                if locationManager.isLoading{
+            } else {
+                if locationManager.isLoading {
                     LoadingView()
-                }
-                else{
+                } else {
                     StartsideView()
                         .environmentObject(locationManager)
                 }
             }
         }
-        .background(.blue)
+        .background(Color(hue: 0.656, saturation: 0.787, brightness: 0.354))
         .preferredColorScheme(.dark)
     }
 }

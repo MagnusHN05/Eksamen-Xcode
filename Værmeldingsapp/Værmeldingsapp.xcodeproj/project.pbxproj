@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7674F5502A3264F0007398B0 /* VærApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7674F54F2A3264F0007398B0 /* VærApiManager.swift */; };
-		7674F5522A326E73007398B0 /* VærView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7674F5512A326E73007398B0 /* VærView.swift */; };
 		7674F5542A3281B0007398B0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7674F5532A3281B0007398B0 /* ModelData.swift */; };
 		7674F5562A328264007398B0 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7674F5552A328264007398B0 /* weatherData.json */; };
 		7674F55A2A32861C007398B0 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7674F5592A32861C007398B0 /* Extentions.swift */; };
+		7674F5622A3289F8007398B0 /* VærView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7674F5612A3289F8007398B0 /* VærView.swift */; };
 		76A58C212A30B0C10056600A /* V_rmeldingsappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58C202A30B0C10056600A /* V_rmeldingsappApp.swift */; };
 		76A58C232A30B0C10056600A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58C222A30B0C10056600A /* ContentView.swift */; };
 		76A58C252A30B0C30056600A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76A58C242A30B0C30056600A /* Assets.xcassets */; };
@@ -23,10 +23,10 @@
 
 /* Begin PBXFileReference section */
 		7674F54F2A3264F0007398B0 /* VærApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VærApiManager.swift"; sourceTree = "<group>"; };
-		7674F5512A326E73007398B0 /* VærView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VærView.swift"; sourceTree = "<group>"; };
 		7674F5532A3281B0007398B0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		7674F5552A328264007398B0 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
 		7674F5592A32861C007398B0 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		7674F5612A3289F8007398B0 /* VærView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VærView.swift"; sourceTree = "<group>"; };
 		76A58C1D2A30B0C10056600A /* Værmeldingsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Værmeldingsapp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A58C202A30B0C10056600A /* V_rmeldingsappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_rmeldingsappApp.swift; sourceTree = "<group>"; };
 		76A58C222A30B0C10056600A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 				76A58C222A30B0C10056600A /* ContentView.swift */,
 				76A58C322A30BE0D0056600A /* StartsideView.swift */,
 				76A58C342A30C5B30056600A /* LoadingView.swift */,
-				7674F5512A326E73007398B0 /* VærView.swift */,
+				7674F5612A3289F8007398B0 /* VærView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -181,8 +181,8 @@
 				76A58C332A30BE0D0056600A /* StartsideView.swift in Sources */,
 				76A58C232A30B0C10056600A /* ContentView.swift in Sources */,
 				76A58C212A30B0C10056600A /* V_rmeldingsappApp.swift in Sources */,
+				7674F5622A3289F8007398B0 /* VærView.swift in Sources */,
 				76A58C352A30C5B30056600A /* LoadingView.swift in Sources */,
-				7674F5522A326E73007398B0 /* VærView.swift in Sources */,
 				7674F5542A3281B0007398B0 /* ModelData.swift in Sources */,
 				76A58C302A30BC700056600A /* LocationManager.swift in Sources */,
 				7674F5502A3264F0007398B0 /* VærApiManager.swift in Sources */,
