@@ -17,7 +17,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate{
     override init() {
         super.init()
         manager.delegate = self
-    }//
+    }
     
     func requestLocation() {
         isLoading = true
@@ -30,7 +30,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate{
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("Error getting location", error)
+        print("Error ikke tilgang til GPS", error)
         isLoading = false
     }
 }
