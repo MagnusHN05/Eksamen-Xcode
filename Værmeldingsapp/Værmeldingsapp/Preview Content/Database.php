@@ -26,7 +26,7 @@ $tjener = "localhost";
 $brukernavn = $_GET["brukernavn"];
 $Passord = $_GET["Passord"];
 
-$sql = "INSERT INTO Elev (Email, brukernavn, Passord) VALUES (,'$brukernavn','Passord')";
+$sql = "INSERT INTO Users (brukernavn, Passord) VALUES (,'$brukernavn','Passord')";
 
 if($kobling->query($sql)) {
     echo "Spørringen $sql ble gjennomført.";
