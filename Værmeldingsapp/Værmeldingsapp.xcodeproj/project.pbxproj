@@ -19,6 +19,8 @@
 		76A58C302A30BC700056600A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58C2F2A30BC700056600A /* LocationManager.swift */; };
 		76A58C332A30BE0D0056600A /* StartsideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58C322A30BE0D0056600A /* StartsideView.swift */; };
 		76A58C352A30C5B30056600A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A58C342A30C5B30056600A /* LoadingView.swift */; };
+		76F658E92A3319AA00114BE1 /* VærInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F658E82A3319AA00114BE1 /* VærInfo.swift */; };
+		76F658EB2A33209700114BE1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F658EA2A33209700114BE1 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		76A58C2F2A30BC700056600A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		76A58C322A30BE0D0056600A /* StartsideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartsideView.swift; sourceTree = "<group>"; };
 		76A58C342A30C5B30056600A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		76F658E82A3319AA00114BE1 /* VærInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VærInfo.swift"; sourceTree = "<group>"; };
+		76F658EA2A33209700114BE1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		76A58C1F2A30B0C10056600A /* Værmeldingsapp */ = {
 			isa = PBXGroup;
 			children = (
+				76F658E72A33199600114BE1 /* Components */,
 				76A58C312A30BDE40056600A /* views */,
 				76A58C2E2A30BC5E0056600A /* Managers */,
 				76A58C202A30B0C10056600A /* V_rmeldingsappApp.swift */,
@@ -103,8 +108,17 @@
 				76A58C322A30BE0D0056600A /* StartsideView.swift */,
 				76A58C342A30C5B30056600A /* LoadingView.swift */,
 				7674F5612A3289F8007398B0 /* VærView.swift */,
+				76F658EA2A33209700114BE1 /* LoginView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		76F658E72A33199600114BE1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				76F658E82A3319AA00114BE1 /* VærInfo.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F658E92A3319AA00114BE1 /* VærInfo.swift in Sources */,
 				76A58C332A30BE0D0056600A /* StartsideView.swift in Sources */,
 				76A58C232A30B0C10056600A /* ContentView.swift in Sources */,
 				76A58C212A30B0C10056600A /* V_rmeldingsappApp.swift in Sources */,
@@ -185,6 +200,7 @@
 				76A58C352A30C5B30056600A /* LoadingView.swift in Sources */,
 				7674F5542A3281B0007398B0 /* ModelData.swift in Sources */,
 				76A58C302A30BC700056600A /* LocationManager.swift in Sources */,
+				76F658EB2A33209700114BE1 /* LoginView.swift in Sources */,
 				7674F5502A3264F0007398B0 /* VærApiManager.swift in Sources */,
 				7674F55A2A32861C007398B0 /* Extentions.swift in Sources */,
 			);

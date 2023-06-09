@@ -25,8 +25,8 @@ struct StartsideView: View {
             .multilineTextAlignment(.center)
             .padding()
             
-            LocationButton(.shareCurrentLocation){
-                locationManager.requestLocation()
+            LocationButton(.shareCurrentLocation) {
+                            locationManager.requestLocation()
             }
             .cornerRadius(30)
             .symbolVariant(.fill)

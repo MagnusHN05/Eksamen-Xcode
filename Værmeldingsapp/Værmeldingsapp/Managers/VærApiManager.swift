@@ -16,7 +16,7 @@ class VærApiManager {
         
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
         
-        guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error while fetching data") }
+        guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("FEIL! Fetcher ikke data! (Fiks det)") }
         
         let decodedData = try JSONDecoder().decode(ResponseBody.self, from: data)
         

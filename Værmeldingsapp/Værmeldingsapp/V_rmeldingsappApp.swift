@@ -11,7 +11,7 @@ import SwiftUI
 struct V_rmeldingsappApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
